@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Your app title -->
+    <title>Panduan Haji & Umrah</title>
+    <!-- framework7 framework -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css"> 
+    <!-- fontawesome framework -->
+    <link rel="stylesheet" href="lib/font-awesome/css/fontawesome-all.min.css"> 
+    <!-- edit framework -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal layout-dark">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+        </div>
+    </div>
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar theme-black">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">Haji & Umrah</div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" data-popover = ".popover-menus" class = "link icon-only open-popover"><i class="fa fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page layout-white navbar-fixed">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                            <div class="logo">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="judul">
+                                <h1>Petunjuk Praktis Manasik</h1>
+                                <h2>Haji & Umrah</h2>
+                            </div>
+                            <div class="list-block">
+                            <ul>
+                                <li>
+                                <a href="daftar-isi.html" class="item-content item-link">
+                                    <div class = "item-media"><i class = "fa fa-list-alt"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Daftar Panduan Haji & Umrah</div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" class="item-content item-link">
+                                    <div class = "item-media"><i class = "fa fa-bookmark"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">&nbsp;Bookmark</div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" class="item-content item-link">
+                                    <div class = "item-media"><i class = "fa fa-search"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Cari</div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar theme-white layout-dark">
+                <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="index.html" class="link"><i class="fa fa-home"></i></a>
+                    <a href="about.html" class="link"><i class="fa fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "popover popover-menus">
+    <div class = "popover-angle"></div>
+    <div class = "popover-inner">
+        <div class = "list-block">
+        <ul>
+            <li><a href = "#" class = "list-button item-link">Menu 1</a></li>
+            <li><a href = "#" class = "list-button item-link">Menu 2</a></li>
+            <li><a href = "#" class = "list-button item-link">Menu 3</a></li>
+            <li><a href = "#" class = "list-button item-link">Menu 4</a></li>
+            <li><a href = "#" class = "list-button item-link">Menu 5</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

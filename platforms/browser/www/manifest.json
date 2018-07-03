@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Haji Umrah",
+  "short_name": "Haji Umrah",
+  "version": "com.phonegap.haji-umrah",
+  "description": "Panduan Haji dan Umrah",
+  "author": "lutfiadnan92",
+  "icons": [],
+  "start_url": "index.html"
+}
